@@ -1,6 +1,3 @@
- Name: Kyle Kong
- Country: Hong Kong
- Project Title:852 Vending Machine
     #### Video Demo:  https://youtu.be/qdy2a64PRv4
     #### Description: Vending Machine
     
