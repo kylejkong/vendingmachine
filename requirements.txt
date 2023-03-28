@@ -1,0 +1,6 @@
+installable pip libraries
+
+"""
+import pandas as pd
+import pyttsx3
+"""
