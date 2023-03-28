@@ -26,7 +26,6 @@ class Vending_Machine:
         
         self.inserted = 0.00
 
-
     def display_items(self):
         for code, item in enumerate(self.items, start = 1):
             print(f"[{code}] - {item.name} - (${item.price:.2f}) - {item.stock}")
@@ -35,9 +34,6 @@ class Vending_Machine:
     def __str__(self):
         return self.items
 
-
-
- 
 # vm = Vending_Machine()
 # print(vm.items[1-1])
 
@@ -57,7 +53,6 @@ def main():
         saythis = (f"Please take your change {change(change_owed)} cents and your {name}")
         print("Please take your change" , change(change_owed),"cents" , "and your" , name)
         text2speech(saythis)
-        
 
 """
 request user to select an item
@@ -95,7 +90,7 @@ def insert_coin(due):
     while due > 0:
     
         while True:
-            try:                
+            try:
                 print("Amount Due: ", due)
                 vm.inserted = int(input("Insert Coin: "))
                 if vm.inserted not in [100,50,25,10,5]:
@@ -129,7 +124,6 @@ def save(n,p):
                 if not first:
                     writer.writeheader()
             writer.writerow({"NAME": n, "PRICE": p})
-
 
 
 """
@@ -182,7 +176,3 @@ def adminadd():
 
 if __name__ == "__main__":
     main()
-
-
-
-
